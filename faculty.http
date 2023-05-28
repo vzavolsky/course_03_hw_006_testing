@@ -1,0 +1,6 @@
+###
+// Get faculties by name or color ignoring case.
+GET http://localhost:8080/faculty?nameOrColor=r
+###
+// Get all students by faculty ID
+GET http://localhost:8080/faculty/3/students

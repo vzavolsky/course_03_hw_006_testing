@@ -1,0 +1,15 @@
+###
+// Get all students
+GET http://localhost:8080/student
+###
+// Get student by ID
+GET http://localhost:8080/student/12
+###
+// Get students by age
+GET http://localhost:8080/student?age=13
+###
+// Get students by age between
+GET http://localhost:8080/student?minAge=12&maxAge=13
+###
+// Get faculty of a student
+GET http://localhost:8080/student/12/faculty
