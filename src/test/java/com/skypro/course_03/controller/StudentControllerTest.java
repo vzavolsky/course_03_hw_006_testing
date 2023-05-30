@@ -146,7 +146,7 @@ public class StudentControllerTest {
 
         List<Student> expectedStudents = students.stream()
                 .filter(
-                        student -> student.getAge() >= maxAge && student.getAge() <= minAge
+                        student -> student.getAge() >= minAge && student.getAge() <= maxAge
                 )
                 .toList();
 

@@ -53,7 +53,7 @@ public class FacultyControllerTest {
         mockMvc.perform(
                 MockMvcRequestBuilders.post("/faculty")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .contentType(objectMapper.writeValueAsString(faculty))
+                        .content(objectMapper.writeValueAsString(faculty))
         ).andExpect( result -> {
             MockHttpServletResponse mockHttpServletResponse = result.getResponse();
             Faculty facultyResult = objectMapper.readValue(
